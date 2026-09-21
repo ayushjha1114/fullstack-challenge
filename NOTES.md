@@ -1,25 +1,25 @@
 # Notes
 
-Fill this in as you go — it carries as much weight in review as the code.
-Keep it short; bullets are fine.
+## What I did
 
-## What I completed
+- Car list with responisive images, loading/error/empty states and a create form that updates the list.
+- Model search (debounced) and sorting.
 
-<!-- Required items done, and anything from the optional list. -->
+## What I skipped
 
-## What I left out, and why
+- The optional detail page.
+- A year filter currently kept the toolbar simple.
+- Images for new cars, since the mock cant store them anyway.
 
-<!-- Scope you consciously cut. Naming a trade-off reads better than silence. -->
+## Decisions
 
-## Decisions and trade-offs
+- No new libraries.
+- The mock returns new cars without the image fields, which broke the cache update, so I write the new record into the cache with those fields filled in.
 
-<!-- Structure, state management, where filtering happens, what you tested and
-     what you didn't, any library you added and why. -->
+## Next
 
-## If I had another day
+- Detail route, browser tests for the create flow, image upload.
 
-<!-- What you would do next, in priority order. -->
+## Running it
 
-## Anything you should know to run it
-
-<!-- Deviations from `npm install && npm run dev`, if any. -->
+`npm install` then `npm run dev`. There is no backend, its all mocked.
